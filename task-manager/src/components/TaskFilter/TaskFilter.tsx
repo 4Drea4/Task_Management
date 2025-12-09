@@ -24,19 +24,24 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 
 };
 
-
-
-
-
     return(
     <div className="filter"> 
+{/* select status */}
     <label>Select Status:</label>
-        <select className="Priorityropdown">
-                <option value="Low">Low</option>
-                <option value="Medium">Medium</option>
-                <option value="High">High</option>
+        <select className="status" value={filters.status} onChange={handleChange}>
+
+                <option value="pending">Pending</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
         </select>
-        <p>Selected: {}</p>
+{/* select priority       */}
+        <label>Select Priority:</label>
+        <select className="priority" value={filters.priority} onChange={handleChange}>
+
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+        </select>
 
     </div>
     
