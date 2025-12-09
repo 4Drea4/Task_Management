@@ -1,5 +1,6 @@
 export type TaskStatus ='pending' | 'in-progress' | 'completed';
 
+export type TaskPriority = 'low' | 'medium' | 'high';
 
 //task list component that manages and display a list of tasks
 
@@ -8,7 +9,7 @@ export interface Task {
     title: string;
     description: string;
     status: TaskStatus;
-    priority: 'low' | 'medium' | 'high';
+    priority: TaskPriority;
     dueDate: string;
 }
 //parent must pass in 
@@ -37,8 +38,10 @@ export interface TaskItemProps {
 // create a TaskFilter component that allows filtering tasks by status and TaskPriorityChangeEvent
 
 export interface TaskFilterProps{
-    onFilterChange: (filters:{
-        status?: TaskStatus;
-        priority?: 'low' | 'medium' | 'high' ;
-    }) => void;
+    onFilterChange: (filters:Filters) => void; //accept an object when I call onFilterChange and accepts the interface Filters  making filters an object
+    //void we arent returning anything no return value bc we are updating state
+}
+export interface Filters{
+    status?: TaskStatus;
+    priority?: TaskPriority ;
 }
