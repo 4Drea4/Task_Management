@@ -1,9 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import type { Task, TaskItemProps } from '../../types';
 
-export const TaskItem: React.FC<TaskItemProps> =
-const [task, setTask] = 
-return(
+export const TaskItem: React.FC<TaskItemProps> = () => ({
+const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const task
+}
+
+})
+ 
     <form onSubmit={}>
         <label>Add Task:</label>
         <input
