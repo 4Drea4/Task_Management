@@ -3,10 +3,10 @@ import type { Task, TaskItemProps, TaskStatus} from '../../types';
 
 export const TaskItem: React.FC<TaskItemProps> = (props) => {
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    event.preventDefault();
-    const taskStatus = event.target.value;
+  
+   const value = event.target.value;
     props.onStatusChange(props.task.id, taskStatus);}
-};
+
 
  return (
     <div className ="task">
@@ -22,7 +22,7 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <button>Delete</button>
     </div>
 
- )}
-    
+ );};
+
 
 
