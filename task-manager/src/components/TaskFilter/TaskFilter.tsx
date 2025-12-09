@@ -1,14 +1,11 @@
 import React, {useState} from "react";
 import type { TaskFilterProps } from "../../types";
-import {Filters} from  "../../types";
+import type {Filters} from  "../../types";
 
 export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
     //set the status (pending, in progress and completed)
 
-const [filters, setFilters]  =  useState<Filters>({
-    status: "",
-    priority: ""
-});
+const [filters, setFilters]  =  useState<Filters>({});
 //start on blank filter selection ^
 //handleChange function with a target on the select elements for both priority and status
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -19,8 +16,8 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     ...filters,
     [name] : value
    };
-   setFilters(updateFilters);
-   onFilterChange(updateFilters);
+   setFilters(updateFilters); //update state
+   onFilterChange(updateFilters); //gives to my parent 
 
 };
 
@@ -28,15 +25,15 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     <div className="filter"> 
 {/* select status */}
     <label>Select Status:</label>
-        <select className="status" value={filters.status} onChange={handleChange}>
+        <select name="status" className="status" value={filters.status} onChange={handleChange}>
 
                 <option value="pending">Pending</option>
                 <option value="in-progress">In Progress</option>
                 <option value="completed">Completed</option>
         </select>
-{/* select priority       */}
+{/* select priority  */}
         <label>Select Priority:</label>
-        <select className="priority" value={filters.priority} onChange={handleChange}>
+        <select name="priority" className="priority" value={filters.priority} onChange={handleChange}>
 
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
