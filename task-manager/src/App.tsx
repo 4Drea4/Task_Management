@@ -1,13 +1,14 @@
 import './App.css'
 import { TaskFilter } from './components/TaskFilter/TaskFilter'
-function App() {
+import {InputTask} from 
   
 
   return (
     <>
+    <InputTask/>
      <TaskFilter/>
     </>
   )
-}
+
 
 export default App

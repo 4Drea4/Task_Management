@@ -31,6 +31,7 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
                 <option value="in-progress">In Progress</option>
                 <option value="completed">Completed</option>
         </select>
+        <br></br>
 {/* select priority  */}
         <label>Select Priority:</label>
         <select name="priority" className="priority" value={filters.priority} onChange={handleChange}>
