@@ -5,7 +5,7 @@ import {InputTask} from
 
   return (
     <>
-    <InputTask/>
+    <TaskItem/>
      <TaskFilter/>
     </>
   )

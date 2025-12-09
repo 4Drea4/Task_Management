@@ -1,24 +1,22 @@
 import React from 'react';
-import type { Task, TaskItemProps } from '../../types';
+import type { Task, TaskItemProps, TaskStatus} from '../../types';
 
-export const TaskItem: React.FC<TaskItemProps> = (props) => ({
+export const TaskItem: React.FC<TaskItemProps> = (props) => {
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     event.preventDefault();
     const taskStatus = event.target.value;
-    props.onStatusChange(props.task.id, taskStatus)''
+    props.onStatusChange(props.task.id, taskStatus);}
 };
 
  return (
     <div className ="task">
+        <h4>{props.task.title}</h4>
+        <p> Due Date {props.task.dueDate}</p>
+        <span>{props.task.priority}</span>
+       <p>{props.task.description}</p>
 
-       
-    <label>Add Task:</label>
-    <input
-    type='text'
-    id='task'
-    />
-    </form>
-
+ 
+   
 
 
         <button>Delete</button>
