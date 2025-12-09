@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import './App.css'
-
+import { TaskFilter } from './components/TaskFilter/TaskFilter'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-     
+     <TaskFilter/>
     </>
   )
 }
