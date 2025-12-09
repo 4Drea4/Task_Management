@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import type { Task } from '../../types';
+import type { Task, TaskItemProps } from '../../types';
 
-const InputForm: React.FC<>
-
+export const TaskItem: React.FC<TaskItemProps> =
+const [task, setTask] = 
 return(
     <form onSubmit={}>
         <label>Add Task:</label>
