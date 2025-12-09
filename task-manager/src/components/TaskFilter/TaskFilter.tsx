@@ -10,17 +10,21 @@ const [filters, setFilters]  =  useState<Filters>({
     priority: ""
 });
 //start on blank filter selection ^
-
+//handleChange function with a target on the select elements for both priority and status
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-   const {name, value} = event.target //name can be either status or priority
+   const {name, value} = event.target ;//name can be either status or priority and the value is what they choose
+
+   //take the object and update the part that changes
    const updateFilters: Filters = {
     ...filters,
     [name] : value
    };
+   setFilters(updateFilters);
+   onFilterChange(updateFilters);
 
 };
 
-}
+
 
 
 
@@ -38,4 +42,4 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     
 )
 
-
+}
