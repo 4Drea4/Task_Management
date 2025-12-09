@@ -5,11 +5,19 @@ import {Filters} from  "../../types";
 export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
     //set the status (pending, in progress and completed)
 
-const [filters, setFilters]  =  useState<Filters>({});
+const [filters, setFilters]  =  useState<Filters>({
+    status: "",
+    priority: ""
+});
 //start on blank filter selection ^
 
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-   const 
+   const {name, value} = event.target //name can be either status or priority
+   const updateFilters: Filters = {
+    ...filters,
+    [name] : value
+   };
+
 };
 
 }
