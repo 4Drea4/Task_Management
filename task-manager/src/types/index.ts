@@ -28,7 +28,6 @@ export interface TaskListProps {
 
 export interface TaskItemProps {
     task: Task;//task will receive one item 
-
     // this function will be passed down from the parent
     onStatusChange: (taskId: string, newStatus: TaskStatus) => void;
 

@@ -1,14 +1,17 @@
 import React from 'react';
-import type { Task, TaskItemProps, TaskStatus} from '../../types';
+import type { TaskItemProps, TaskStatus} from '../../types';
 
 export const TaskItem: React.FC<TaskItemProps> = (props) => {
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
   
-   const taskStatus = event.target.value;
-    props.onStatusChange(props.task.id, taskStatus:taskStatus);}
+   const taskStatus = event.target.value as TaskStatus;
+
+   //calling the callback function from TaskItemProps and it takes the id from the task thats showing. and taskStatus is the new status of task that the user selects.
+    props.onStatusChange(props.task.id, taskStatus);}
     
     const handleDelete = () =>{
-        props.onDelete(props.task.id);    };
+        props.onDelete(props.task.id);   
+ };
 
  return (
     <div className ="task">
@@ -17,6 +20,7 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <span>{props.task.priority}</span>
        <p>{props.task.description}</p>
 
+    
  
    
 
