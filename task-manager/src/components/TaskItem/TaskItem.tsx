@@ -3,15 +3,15 @@ import type { Task, TaskItemProps } from '../../types';
 
 export const TaskItem: React.FC<TaskItemProps> = (props) => ({
 const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    event.preventDefault();
     const taskStatus = event.target.value;
-}
+    props.onStatusChange(props.task.id, taskStatus)''
+};
 
-})
  return (
+    <div className ="task">
 
-    <div className = "tasks">
-
-        <form onSubmit={}>
+       
     <label>Add Task:</label>
     <input
     type='text'
@@ -24,14 +24,7 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <button>Delete</button>
     </div>
 
-
+ )}
     
 
 
-
-
-)
-
-
- )
-   
