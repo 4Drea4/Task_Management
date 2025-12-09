@@ -20,7 +20,14 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <span>{props.task.priority}</span>
        <p>{props.task.description}</p>
 
-    
+    <label>
+       Task Status:
+    <select value= {props.task.status} onChange={handleChange}>
+        <option value="pending">Pending</option>
+        <option value="in-progress">In Progress</option>
+        <option value="completed">Completed</option>
+    </select>
+    </label>
  
    
 

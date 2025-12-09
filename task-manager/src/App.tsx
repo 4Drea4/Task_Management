@@ -6,7 +6,11 @@ function App(){
 
   return (
     <>
-    <TaskItem/>
+    <TaskItem
+    
+    
+    
+    />
      <TaskFilter/>
     </>
   );
