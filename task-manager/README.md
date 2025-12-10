@@ -52,9 +52,11 @@ In this lab, I created a task management application that demonstrates dynamic l
 
 ### Questions + Answers  
 
-### Input ?
+### Input
+All data will be pre-inserted into the app component, however we will be able to interact with the data by filtering it, changing the status, and deleting it. 
 
-### Output ??
+### Output 
+
 
 
 ### Step-by-Step Process (What will I need to do)  
@@ -69,7 +71,7 @@ In this lab, I created a task management application that demonstrates dynamic l
 
 
 ## Troubleshooting 
-   
+   I ran into several errors as I was pulling in information from props, and unsure of what data to put where. I relied on past examples for clarity and when I could not resolve the problem on my own I resulted to asking for additional assistance.
 
 ### Problems 
 
