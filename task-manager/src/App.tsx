@@ -7,7 +7,7 @@ import { Task , TaskStatus } from './types'
 
 
 export default function App(){
-const [tasks, setTasks] = useState([
+const [tasks, setTasks] = useState<Task>([
   {
     id: "P4-1",
     title: "Walk my fish",
