@@ -1,3 +1,4 @@
+import React from "react";
 import { TaskItem } from "../TaskItem/TaskItem";
 import type { TaskListProps } from "../../types";
 
@@ -16,12 +17,13 @@ export const TaskList: React.FC<TaskListProps> = (props) => {
                     onDelete={props.onDelete}
                     />
                     </div>
-            );
-            }
-        )}
+             );
+            } 
+        )
+  }
         </div>
-
-)}
+ );
+};
 
 
     
