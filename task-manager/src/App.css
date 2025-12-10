@@ -5,12 +5,18 @@ padding: 10px;
 background-image: url('grinch.png') ;
 }
 
-h4 , h1 ,p, span {
+ h1  {
 text-align: center;
 }
 span{
  display: inline-block;
+ color: rgb(192, 32, 32);
+ font-weight: bold;
 }
-div{
-  
+.task{
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: rgba(8, 89, 29, 0.557);
+
 }
