@@ -1,15 +1,29 @@
 import { TaskItem } from "../TaskItem/TaskItem";
-import { TaskListProps } from "../../types";
+import type { TaskListProps } from "../../types";
+
+
 
 export const TaskList: React.FC<TaskListProps> = (props) => {
     return (
         <div>
-
+            {/* mapping over the tasks array from tasklist props */}
+            {props.tasks.map((taskObj) => {
+            return (
+                <div key={taskObj.id}>
+                    <TaskItem
+                    task={taskObj}
+                    onStatusChange={props.onStatusChange}
+                    onDelete={props.onDelete}
+                    />
+                    </div>
+            );
+            }
+        )}
         </div>
 
 )}
 
 
-  );
-
-}
+    
+    
+    
