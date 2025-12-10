@@ -52,7 +52,7 @@ function handleDelete(taskId: string){
   return (
    
     <div>
-      <h1> Task Manager</h1>
+      <h1> Grinch Manager</h1>
       <TaskList
       tasks={tasks}
       onStatusChange={handleStatusChange}

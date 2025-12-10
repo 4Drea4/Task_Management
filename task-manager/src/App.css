@@ -4,6 +4,10 @@ flex-direction: column;
 padding: 10px;
 align-items: center;
 background-image: url('grinch.png') ;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
 }
 
  h1  {
@@ -29,5 +33,11 @@ span{
 select{
   border-radius:15px ;
   padding: 10px;
-  background-color: #32E300;
+  background-color: #1b4e0d;
+}
+
+button{
+  background-color: #ff0000 ;
+  border-radius: 15px;
+  font-weight: bold;
 }
