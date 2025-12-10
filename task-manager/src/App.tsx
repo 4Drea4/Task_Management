@@ -2,7 +2,7 @@ import './App.css'
 import { TaskFilter } from './components/TaskFilter/TaskFilter'
 import { TaskItem } from './components/TaskItem/TaskItem' 
 import {useState} from 'react'
-//  import {TaskList}   './components/TaskList/TaskList' 
+ import {TaskList}  from './components/TaskList/TaskList' 
 import { Task , TaskStatus } from './types'
 
 
