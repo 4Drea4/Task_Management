@@ -11,7 +11,8 @@ const [tasks, setTasks] = useState<Task>([
   {
     id: "P4-1",
     title: "Walk my fish",
-    description: "It's sandwich day. Every Thursday, I take Pudge the fish a peanut butter sandwich. But today, we were out of peanut butter. So I asked my sister what to give him, and she said 'a tuna sandwich.' I can't give Pudge tuna! Do you know what tuna is..It's fish! If I give Pudge tuna, I'd be an abomination! I'm late because I had to go to the store and get peanut butter 'cause all we have is.. is.. is stinkin' tuna!",
+    description:
+     "It's sandwich day. Every Thursday, I take Pudge the fish a peanut butter sandwich. But today, we were out of peanut butter. So I asked my sister what to give him, and she said 'a tuna sandwich.' I can't give Pudge tuna! Do you know what tuna is..It's fish! If I give Pudge tuna, I'd be an abomination! I'm late because I had to go to the store and get peanut butter 'cause all we have is.. is.. is stinkin' tuna!",
     status: "pending",
     priority: "high",
     dueDate: "12/10/25"
@@ -31,31 +32,43 @@ const [tasks, setTasks] = useState<Task>([
     status: "completed",
     priority: "medium",
     dueDate: "12/20/25"
-  }
+  },
 
 ]);
-function onStatusChange(taskId: string, newStatus: TaskStatus){
- return;
+//  Help from Eduart right here
+
+// handle status
+function handleStatusChange(taskId: string, newStatus: TaskStatus) {
+  setTasks((prevTasks) => 
+    prevTasks.map((task => 
+      task.id === taskId ? {...task , status: newStatus} :task 
+
+    )
+  ) ;
+}
+// handle delete
+function handleDelete(taskId: string){
+  setTasks ((prevTasks) => prevTasks.filter((task) => task.id !==taskId));
+
 }
 
 
 
-  return (
-    <>
-    <div>
-    <TaskFilter/>
-    <TaskItem/>
-    
-    {/* tasks={tasks} */}
-    
+}
 
+
+
+
+
+  return (
+   
+    <div>
+    
 
     </div>
-    </>
+  
    
   );
-
-
 }
  
 
