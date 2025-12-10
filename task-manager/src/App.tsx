@@ -33,7 +33,7 @@ const [tasks, setTasks] = useState<Task[]>([
   },
 
 ]);
-//  Help from Eduart right here
+//  Help from Eduart right here with logic
 
 // handle status
 function handleStatusChange(taskId: string, newStatus: TaskStatus) {

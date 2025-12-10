@@ -2,13 +2,15 @@ body{
 display: flex;
 flex-direction: column;
 padding: 10px;
-
+background-image: url('grinch.png') ;
 }
 
-h4{
-
+h4 , h1 ,p, span {
+text-align: center;
 }
-
-p{
-
+span{
+  color: white
+}
+div{
+  
 }

@@ -91,7 +91,14 @@ All data will be pre-inserted into the app component, however we will be able to
 4. 
 
 ## Reflection
-
+1. How did you ensure unique keys for your list items?
+   - By using key to the id of the from the Task object I assigned the value.
+2. What considerations did you make when implementing the filtering functionality?
+   - I originally was going to manage the state for multiple objects but with some re-direction from my instructing assistant I found it more straight forward to use a single state object. So we created a Filters type and added an handle change that could work for both elements. I also understand the logic for TaskFilter as it does not do the filtering but lets the parent app complete it, however I did not implement this successfully on the UI. 
+3. How did you handle state updates for task status changes?
+   - The tasks state livies in the App and handles callback function.
+4. What challenges did you face when implementing conditional rendering?
+- I found it difficult to handle unions in the beginning, I found it tricky to successfully map through the contents of each component with respect to where the parent was needed. The syntax of use state has become a bit more familiar however with conditionals and keys being very new I did have difficulties and relied heavily on past examples. The way components engage with parent app is a bit difficult to implement although I am understanding it more conceptually. 
 
 ## References 
 
