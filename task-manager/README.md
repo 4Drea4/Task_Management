@@ -106,4 +106,5 @@ All data will be pre-inserted into the app component, however we will be able to
 Disclaimer:
 - I received assistance from a few classmates on this project. Eduart with rendering in the app and composition of mapping over my task list items. <br>
 - Javon with project planning, use state assistance and resources. <br>
+-Bryans assistance in office hourse <br>
 - Group 1 With emotional support.
