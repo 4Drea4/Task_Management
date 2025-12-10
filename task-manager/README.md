@@ -55,27 +55,13 @@ In this lab, I created a task management application that demonstrates dynamic l
 ### Input
 All data will be pre-inserted into the app component, however we will be able to interact with the data by filtering it, changing the status, and deleting it. 
 
-### Output 
 
-
-
-### Step-by-Step Process (What will I need to do)  
-
-1. 
-2. 
-3. 
-4. 
-
-
-## What I did in detail 
 
 
 ## Troubleshooting 
    I ran into several errors as I was pulling in information from props, and unsure of what data to put where. I relied on past examples for clarity and when I could not resolve the problem on my own I resulted to asking for additional assistance.
 
 ### Problems 
-
-
 
 1.  Mapping through a more complex problem takes thorough understanding of what you are trying to accomplish on a very detailed level. 
 2. Use State is still very new, mixed with the understanding of react and now conditionals and lists making this is a very difficult project. 
@@ -85,10 +71,9 @@ All data will be pre-inserted into the app component, however we will be able to
 ### Solutions
 
 
-1. I continued to read through the directions, and utilized examples to pull relevant props, and created necessary functions to the best of my ability. 
+1. I continued to read through the directions, and utilized examples to create that task manager.
 2. I pulled every resource I could out of my aresenal, in depth explanations with instructors, watching numerous videos available on youtube, reading react documentation, discussing concepts with classmates, not sleeping enough, playing react in the background as I sleep hoping that the white noise seeps into my brain as I sleep. 
-3. 
-4. 
+
 
 ## Reflection
 1. How did you ensure unique keys for your list items?
@@ -101,14 +86,18 @@ All data will be pre-inserted into the app component, however we will be able to
 - I found it difficult to handle unions in the beginning, I found it tricky to successfully map through the contents of each component with respect to where the parent was needed. The syntax of use state has become a bit more familiar however with conditionals and keys being very new I did have difficulties and relied heavily on past examples. The way components engage with parent app is a bit difficult to implement although I am understanding it more conceptually. 
 
 ## References 
-
+- [React - Conecptually and how things interact](https://youtu.be/edsuuCsiah0?si=eJKVAvQAK_KjYmlb)
+- [Conditionals](https://youtu.be/XvURBpFxdGw?si=RddXUHgEaJdjE_cQ)
+- [Parent Child interactions](https://youtu.be/NkKrPeX1W5E?si=lI-ayR1tTDIPCl3R)
+- [Objects in state](https://youtu.be/YxQlt3n1ZPA?si=ppaOTWZ1F3lDoyof)
 
 ### Programs I used 
-
+n/a
 
 ### Websites I used
-[handles](https://legacy.reactjs.org/docs/handling-events.html)
-
+- [handles](https://legacy.reactjs.org/docs/handling-events.html)
+- [State examples](https://stackoverflow.com/questions/43638938/updating-an-object-with-setstate-in-react)
+- [Hooks](https://forum.freecodecamp.org/t/react-hooks-how-to-use-updated-state-immediately/638822)
 
 Disclaimer:
 I received very hands on assistance from a few classmates on this project. 

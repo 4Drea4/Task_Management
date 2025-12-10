@@ -9,7 +9,7 @@ h4 , h1 ,p, span {
 text-align: center;
 }
 span{
-  color: white
+ display: inline-block;
 }
 div{
   
