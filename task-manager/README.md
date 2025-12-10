@@ -98,6 +98,8 @@ n/a
 - [handles](https://legacy.reactjs.org/docs/handling-events.html)
 - [State examples](https://stackoverflow.com/questions/43638938/updating-an-object-with-setstate-in-react)
 - [Hooks](https://forum.freecodecamp.org/t/react-hooks-how-to-use-updated-state-immediately/638822)
+- [Grinch Green Hex](https://www.colourlovers.com/color/32E300/Grinch_Green#google_vignette)
+- [Coolers]()
 
 Disclaimer:
 I received very hands on assistance from a few classmates on this project. 

@@ -2,6 +2,7 @@ body{
 display: flex;
 flex-direction: column;
 padding: 10px;
+align-items: center;
 background-image: url('grinch.png') ;
 }
 
@@ -10,8 +11,13 @@ text-align: center;
 }
 span{
  display: inline-block;
+ background-color:#fff0f0 ;
  color: rgb(192, 32, 32);
  font-weight: bold;
+ padding: 5px;
+ border-radius: 10px;
+ margin: ;
+
 }
 .task{
   border-radius: 15px;
@@ -19,4 +25,9 @@ span{
   padding: 5px;
   background-color: rgba(8, 89, 29, 0.557);
 
+}
+select{
+  border-radius:15px ;
+  padding: 10px;
+  background-color: #32E300;
 }
