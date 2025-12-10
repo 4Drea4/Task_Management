@@ -1,18 +1,37 @@
 import './App.css'
 import { TaskFilter } from './components/TaskFilter/TaskFilter'
 import { TaskItem } from './components/TaskItem/TaskItem' 
+
   
-function App(){
+export default function App(){
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
-    <>
-    <TaskItem
+    <div>
+   
+
+    <div>
+      <TaskItem/>
+
+    </div>
     
-    
-    
-    />
-     <TaskFilter/>
-    </>
+    <TaskFilter/>
+
+
+    </div>
+     
+   
   );
 
 
@@ -20,4 +39,4 @@ function App(){
  
 
 
-export default App
+
