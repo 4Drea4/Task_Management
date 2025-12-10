@@ -1,7 +1,7 @@
 import './App.css'
 import {useState} from 'react'
 import {TaskList}  from './components/TaskList/TaskList' 
-import { Task , TaskStatus } from './types'
+import type { Task , TaskStatus } from './types'
 
 
 export default function App(){

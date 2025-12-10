@@ -18,9 +18,7 @@ export const TaskList: React.FC<TaskListProps> = (props) => {
                     />
                     </div>
              );
-            } 
-        )
-  }
+            } )}
         </div>
  );
 };

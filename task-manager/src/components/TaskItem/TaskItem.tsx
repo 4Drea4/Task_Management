@@ -28,10 +28,6 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         <option value="completed">Completed</option>
     </select>
     </label>
- 
-   
-
-
         <button onClick={handleDelete}>Delete</button>
     </div>
 
