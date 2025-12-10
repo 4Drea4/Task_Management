@@ -1,13 +1,11 @@
 import './App.css'
-import { TaskFilter } from './components/TaskFilter/TaskFilter'
-import { TaskItem } from './components/TaskItem/TaskItem' 
 import {useState} from 'react'
- import {TaskList}  from './components/TaskList/TaskList' 
+import {TaskList}  from './components/TaskList/TaskList' 
 import { Task , TaskStatus } from './types'
 
 
 export default function App(){
-const [tasks, setTasks] = useState<Task>([
+const [tasks, setTasks] = useState<Task[]>([
   {
     id: "P4-1",
     title: "Walk my fish",
@@ -42,9 +40,8 @@ function handleStatusChange(taskId: string, newStatus: TaskStatus) {
   setTasks((prevTasks) => 
     prevTasks.map((task => 
       task.id === taskId ? {...task , status: newStatus} :task 
-
     )
-  ) ;
+    ))
 }
 // handle delete
 function handleDelete(taskId: string){
@@ -52,19 +49,14 @@ function handleDelete(taskId: string){
 
 }
 
-
-
-}
-
-
-
-
-
   return (
    
     <div>
-    
-
+      <TaskList
+      tasks={tasks}
+      onStatusChange={handleStatusChange}
+      onDelete={handleDelete}
+      />
     </div>
   
    
