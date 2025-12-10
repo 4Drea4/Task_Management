@@ -7,7 +7,7 @@ background-image: url('grinch.png') ;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-
+color: #d1d1d1;
 }
 
  h1  {
@@ -33,11 +33,22 @@ span{
 select{
   border-radius:15px ;
   padding: 10px;
-  background-color: #1b4e0d;
+  background-color: #d1d1d1;
 }
 
 button{
   background-color: #ff0000 ;
   border-radius: 15px;
   font-weight: bold;
+}
+
+.taskFilter{
+  display: inline-block;
+color: rgb(15, 221, 0);
+font-weight: bold;
+background-color: rgba(5, 0, 0, 0.407);
+padding: 20px;
+}
+.taskFilter select{
+  color: cornsilk;
 }

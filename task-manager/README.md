@@ -111,6 +111,7 @@ Utilized this template for the map in task list: "
 - [Hooks](https://forum.freecodecamp.org/t/react-hooks-how-to-use-updated-state-immediately/638822)
 - [Grinch Green Hex](https://www.colourlovers.com/color/32E300/Grinch_Green#google_vignette)
 - [Coolers]()
+- [FIlter](https://www.youtube.com/watch?v=2iEfZWz1jvs)
 
 Disclaimer:
 I received very hands on assistance from a few classmates on this project. 

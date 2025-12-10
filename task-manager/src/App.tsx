@@ -2,6 +2,7 @@ import './App.css'
 import {useState} from 'react'
 import {TaskList}  from './components/TaskList/TaskList' 
 import type { Task , TaskStatus } from './types'
+import { TaskFilter } from './components/TaskFilter/TaskFilter';
 
 
 export default function App(){
@@ -53,15 +54,20 @@ function handleDelete(taskId: string){
 
 }
 
+//filter function and rendering
+//I believe I can move my use state from task filter here , will work on when i get time
+
   return (
    
     <div>
       <h1> Grinch Manager</h1>
+      <div className='taskFilter'>  <TaskFilter/></div>
       <TaskList
       tasks={tasks}
       onStatusChange={handleStatusChange}
       onDelete={handleDelete}
       />
+      
     </div>
   
    
