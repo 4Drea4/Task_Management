@@ -77,16 +77,16 @@ All data will be pre-inserted into the app component, however we will be able to
 
 
 
-1.  
-2. 
+1.  Mapping through a more complex problem takes thorough understanding of what you are trying to accomplish on a very detailed level. 
+2. Use State is still very new, mixed with the understanding of react and now conditionals and lists making this is a very difficult project. 
 3. 
 4. 
 
 ### Solutions
 
 
-1. 
-2. 
+1. I continued to read through the directions, and utilized examples to pull relevant props, and created necessary functions to the best of my ability. 
+2. I pulled every resource I could out of my aresenal, in depth explanations with instructors, watching numerous videos available on youtube, reading react documentation, discussing concepts with classmates, not sleeping enough, playing react in the background as I sleep hoping that the white noise seeps into my brain as I sleep. 
 3. 
 4. 
 
@@ -104,7 +104,8 @@ All data will be pre-inserted into the app component, however we will be able to
 
 
 Disclaimer:
-- I received assistance from a few classmates on this project. Eduart with rendering in the app and composition of mapping over my task list items. <br>
+I received very hands on assistance from a few classmates on this project. 
+- Eduart with rendering in the app and composition of mapping over my task list items. <br>
 - Javon with project planning, use state assistance and resources. <br>
--Bryans assistance in office hourse <br>
-- Group 1 With emotional support.
+- Bryans assistance in office hourse <br>
+- Group 1 With emotional support.<br>

@@ -1,23 +1,15 @@
-import { useState } from "react";
-import UserProfileCard from "./UserProfileCard";
+import { TaskItem } from "../TaskItem/TaskItem";
+import { TaskListProps } from "../../types";
 
-export default function UserList(){
-
-const [users, setUsers]= useState([
-])
-
+export const TaskList: React.FC<TaskListProps> = (props) => {
     return (
-    <>
-    {
-      users.map((userObj)=>{
-        return(
-          <li key={userObj.id} style={{listStyle:'none'}} >
-            <UserProfileCard user={userObj}/>
-          </li>
-        )
-      })
-    }
-    </>
+        <div>
+
+        </div>
+
+)}
+
+
   );
 
 }
