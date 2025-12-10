@@ -36,9 +36,13 @@ const [tasks, setTasks] = useState<Task[]>([
 //  Help from Eduart right here with logic
 
 // handle status
+//create a function that accepts the onstatus function from the tasklistprops interface
 function handleStatusChange(taskId: string, newStatus: TaskStatus) {
+  //passing a function that receives prev value here
   setTasks((prevTasks) => 
+  //loop through the tasks array
     prevTasks.map((task => 
+    //check each child, if its the task we want to update we return a new object
       task.id === taskId ? {...task , status: newStatus} :task 
     )
     ))

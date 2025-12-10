@@ -18,8 +18,8 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const handleDelete = () =>{
         props.onDelete(props.task.id);   
  };
-//returns on taks
-//uese props.task to show the properties of the task object
+//returns on task
+//use props.task to show the properties of the task object
  return (
     <div className ="task">
         <h4>{props.task.title}</h4>
@@ -29,7 +29,7 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
 
     <label>
        Task Status:
-    <select value= {props.task.status} onChange={handleChange}>
+     <select value= {props.task.status} onChange={handleChange}>
         <option value="pending">Pending</option>
         <option value="in-progress">In Progress</option>
         <option value="completed">Completed</option>
