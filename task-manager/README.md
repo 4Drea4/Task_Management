@@ -92,7 +92,18 @@ All data will be pre-inserted into the app component, however we will be able to
 - [Objects in state](https://youtu.be/YxQlt3n1ZPA?si=ppaOTWZ1F3lDoyof)
 
 ### Programs I used 
-n/a
+Utilized this template for the map in task list: "
+> {
+>     users.map((userObj)=>{
+>        return(
+>          <li key={userObj.id} style=>{{listStyle:'none'}} >
+ >           <UserProfileCard user={userObj}/>
+ >         </li>
+ >       )
+ >     })
+ >   }
+ >   </>
+ > );"
 
 ### Websites I used
 - [handles](https://legacy.reactjs.org/docs/handling-events.html)
