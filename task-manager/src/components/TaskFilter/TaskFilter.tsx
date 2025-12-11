@@ -25,7 +25,12 @@ const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     <div className="filter"> 
 {/* select status */}
     <label>Select Status:</label>
-        <select name="status" className="status" value={filters.status} onChange={handleChange}>
+        <select 
+        name="status" 
+        className="status" 
+        value={filters.status} 
+        onChange={handleChange}>
+            
         <option value="all-status">All Status</option>
                 <option value="pending">Pending</option>
                 <option value="in-progress">In Progress</option>
